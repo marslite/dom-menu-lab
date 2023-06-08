@@ -21,7 +21,10 @@ topMenueL.classList.add("flex-around");
 menuLinks.forEach(function(link){
     const a = document.createElement('a');
     a.text = link.text;
+    console.log(a.text);
     a.href= link.href;
+    console.log(a.url);
     topMenueL.append(a);
+    console.log(a);
   })
   
