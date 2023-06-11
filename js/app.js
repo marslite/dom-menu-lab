@@ -243,6 +243,10 @@ topMenueL.addEventListener('click', function(e){
     //6.3 Next, subMenuEl's event listener should update the contents of mainEl to 
     //the contents of the <a> element, within an <h1>, clicked within subMenuEl.
     console.log('Look here -->',e.target.text);
-    mainEl.innerText = e.target.text;
+    mainEl.classList.add('h1');
+    mainEl.querySelector('h1').innerText = e.target.text;
+    //Created for testing purposes
+    // mainEl.innerText = e.target.text;
+
   
   })
